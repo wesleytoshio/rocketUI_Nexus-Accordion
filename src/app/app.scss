@@ -1,0 +1,36 @@
+$color-one:#190c38;
+$color-two:#241445;
+* {
+  box-sizing: border-box;
+  max-width: 100%;
+}
+[remove-nowrap]{
+  white-space:initial !important;
+  *{
+      white-space:initial !important;
+  }
+}
+ion-label{
+  white-space: initial !important;
+}
+.rocketui-special-thanks{
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  padding: 16px;
+  color: #555;
+  h2{
+    font-size: 2em;
+    font-weight: 300;
+    color: #666;
+  }
+  p{
+    font-size: 1.6rem;
+  }
+  a{
+    display: block;
+    font-size: 1.8rem;
+    text-decoration: none;
+  }
+}

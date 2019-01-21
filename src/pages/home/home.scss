@@ -1,0 +1,114 @@
+page-home {
+  ion-header{
+    .toolbar{
+      min-height: 54px;
+    }
+    .toggle-button{
+      background-color: transparent !important;
+      .item-inner{
+        border:none !important;
+      }
+    }
+  }
+  ion-content{
+
+    background-color: #f5f5f5 !important;
+    transition: background .35s linear;
+    .panel{
+      max-height: 0;
+      overflow: hidden;
+      transition: all .35s ease-out;
+    }
+    .nexus-accordion{
+      ion-item{
+        background-color: transparent !important;
+        border:none !important;
+        border-bottom:solid 1px #e0e0e0 !important;
+        .icon-default{
+          width: 32px;
+          height: 32px;
+          display: block;
+          text-align: center;
+          border-radius: 32px;
+          align-self: flex-start;
+          transition: all .25s linear;
+          top: 10px;
+          position: absolute;
+          img{
+            width: 22px;
+            position: relative;
+            top: 4px;
+          }
+          &.color-1{
+            background-color: #ff308e;
+          }
+          &.color-2{
+            background-color: #fa9301;
+          }
+          &.color-3{
+            background-color: #f8d411;
+          }
+          &.color-4{
+            background-color: #1cb2d7;
+          }
+          &.color-5{
+            background-color: #49cc5c;
+          }
+          &.expanded{
+            height:calc(100% - 30px);
+          }
+        }
+        button{
+          height: 44px ;
+          display: block;
+          width: calc(100% - 45px);
+          margin-left: 45px;
+          text-align: left;
+          background-color: transparent;
+          color: #414141;
+          font-size: 1.1em;
+
+        }
+        .panel{
+          margin-left: 45px;
+          padding-left: 5px;
+          overflow: hidden;
+          p{
+            color: #555;
+            line-height: 1.4;
+            font-size: 1.4rem;
+          }
+        }
+      }
+    }
+
+    //from this point controls the colors
+    //of the selected theme
+    &.dark-theme{
+      background-color: $color-two !important;
+      .nexus-accordion{
+        ion-item{
+          border-bottom-color:#322050 !important;
+          button{
+            color:#fff !important;
+          }
+        }
+      }
+      .panel{
+        p{
+          color: rgba(255,255,255,0.5) !important;
+        }
+      }
+      .rocketui-special-thanks{
+        h2{
+          color: rgba(255,255,255,0.7) !important;
+        }
+        p{
+          color: rgba(255,255,255,0.5) !important;
+        }
+      }
+    }
+  }
+
+
+}
